@@ -83,9 +83,15 @@ por qualquer classe do diagrama, ou seja, são atributos ou métodos públicos;
 somente  pela  classe onde foi criado e também pelas classes derivadas desta.
 
 29.
-| Cliente                                                                     |   |   |   |   |
-|-----------------------------------------------------------------------------|---|---|---|---|
-| -nome -email -telefone                                                      |   |   |   |   |
-| +setNome() +setEmail() +setTelefone() +getNome() +getEmail() +getTelefone() |   |   |   |   |
-|                                                                             |   |   |   |   |
-| | | | | |
+| Cliente                                                                     |
+|-----------------------------------------------------------------------------|
+| -nome: String
+-email: String 
+-telefone:String                                                  |
+| +setNome(nome: String) 
++setEmail(email: String) 
++setTelefone(telefone: String) 
++getNome(): String 
++getEmail(): String
++getTelefone(): String |
+|                                                                             |
