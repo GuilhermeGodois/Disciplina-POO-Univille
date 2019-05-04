@@ -85,13 +85,5 @@ somente  pela  classe onde foi criado e também pelas classes derivadas desta.
 29.
 | Cliente                                                                     |
 |-----------------------------------------------------------------------------|
-| -nome: String
--email: String 
--telefone:String                                                  |
-| +setNome(nome: String) 
-+setEmail(email: String) 
-+setTelefone(telefone: String) 
-+getNome(): String 
-+getEmail(): String
-+getTelefone(): String |
-|                                                                             |
+| -nome: String <br/>-email: String <br/>-telefone:String                     |
+| +setNome(nome: String) <br/>+setEmail(email: String) <br/>+setTelefone(telefone: String) <br/>+getNome(): String <br/>+getEmail(): String <br/>+getTelefone(): String |
