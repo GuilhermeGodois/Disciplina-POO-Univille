@@ -71,3 +71,19 @@ Exemplo: TextField nome = new TextField();
 26. Camelcase com a primeira letra minuscula 
 
 27. 
+
+28.
+(-) refere-se a um atributo ou método que pode ser usado
+somente na classe onde foi criado;
+(+) refere-se a um atributo ou método que pode ser usado
+por qualquer classe do diagrama, ou seja, são atributos ou métodos públicos;
+(#)  refere-se  a  um  atributo  ou  método  que  pode  ser  usado
+somente  pela  classe onde foi criado e também pelas classes derivadas desta.
+
+29.
+| Cliente                                                                     |   |   |   |   |
+|-----------------------------------------------------------------------------|---|---|---|---|
+| -nome -email -telefone                                                      |   |   |   |   |
+| +setNome() +setEmail() +setTelefone() +getNome() +getEmail() +getTelefone() |   |   |   |   |
+|                                                                             |   |   |   |   |
+|                                                                             |   |   |   |   |
