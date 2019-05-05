@@ -92,39 +92,115 @@ somente  pela  classe onde foi criado e também pelas classes derivadas desta.
 ```java
 public class Cliente {
         
-    String nome;
-    String email;
-    String telefone;
+    private String nome;
+    private String email;
+    private String telefone;
         
-    public Cliente(String iNome, String iEmail, String iTelefone) {
-        nome = iNome;
-        email = iEmail;
-        telefone = iTelefone;
+    public void Cliente(String iNome, String iEmail, String iTelefone) {
+        this.nome = iNome;
+        this.email = iEmail;
+        this.telefone = iTelefone;
     }
        
     public void setNome(String novoNome) {
-        nome = novoNome;
+        this.nome = novoNome;
     }
         
     public void setEmail(String novoEmail) {
-        email = novoEmail;
+        this.email = novoEmail;
     }
         
     public void setTelefone(String novoTelefone) {
-        telefone = novoTelefone;
+        this.telefone = novoTelefone;
     }
         
-    public void getNome() String {
+    public String getNome() {
         return nome;
     }
     
-    public void getEmail() String {
+    public String getEmail() {
         return email;
     }
     
-    public void getTelefone() String {
+    public String getTelefone() {
         return telefone;
     }
         
 }
 ```
+
+31.
+Produto:
+```java
+public class Produto {
+        
+    private String nome;
+        
+    public Produto(String iNome) {
+        this.nome = iNome;
+    }
+       
+    public void setNome(String novoNome) {
+        this.nome = novoNome;
+    }
+    
+    public String getNome() {
+        return nome;
+    }
+}
+```
+Password:
+```java
+public class Password {
+        
+    private String value;
+        
+    public void Password(String iValue) {
+        this.value = iValue;
+    }
+       
+    public boolean isEqual(String eValue) {
+        return (value == eValue);
+    }
+}
+```
+Animal:
+```java
+public class Password {
+        
+    private boolean alive;
+        
+    public boolean isAlive() {
+        return alive;
+    }
+       
+    public boolean die() {
+        this.alive = false;
+    }
+}
+```
+32.
+Livro:
+| Livro                                                                     |
+|-----------------------------------------------------------------------------|
+| -nome: String                     |
+| +setNome(nome: String) <br/>+getNome(): String |
+
+Conta Corrente:
+| ContaCorrente                                                               |
+|-----------------------------------------------------------------------------|
+| -saldo: double                     |
+| +sacar(valor: double): double <br/>+depositar(double valor) <br/>-recalcularSaldo() |
+
+Par:
+| Par                                                               |
+|-----------------------------------------------------------------------------|
+| +chave: string <br/>+valor: string                     |
+|  |
+
+Impressora:
+| Impressora                                                               |
+|-----------------------------------------------------------------------------|
+|  |
+| +imprimir(Documento documento) |
+
