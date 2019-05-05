@@ -87,3 +87,44 @@ somente  pela  classe onde foi criado e também pelas classes derivadas desta.
 |-----------------------------------------------------------------------------|
 | -nome: String <br/>-email: String <br/>-telefone:String                     |
 | +setNome(nome: String) <br/>+setEmail(email: String) <br/>+setTelefone(telefone: String) <br/>+getNome(): String <br/>+getEmail(): String <br/>+getTelefone(): String |
+
+30.
+```java
+public class Cliente {
+        
+    String nome;
+    String email;
+    String telefone;
+        
+    public Cliente(String iNome, String iEmail, String iTelefone) {
+        nome = iNome;
+        email = iEmail;
+        telefone = iTelefone;
+    }
+       
+    public void setNome(String novoNome) {
+        nome = novoNome;
+    }
+        
+    public void setEmail(String novoEmail) {
+        email = novoEmail;
+    }
+        
+    public void setTelefone(String novoTelefone) {
+        telefone = novoTelefone;
+    }
+        
+    public void getNome() String {
+        return nome;
+    }
+    
+    public void getEmail() String {
+        return email;
+    }
+    
+    public void getTelefone() String {
+        return telefone;
+    }
+        
+}
+```
