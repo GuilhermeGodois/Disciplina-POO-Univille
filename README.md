@@ -180,27 +180,23 @@ public class Password {
 }
 ```
 32.
-Livro:
-| Livro                                                                     |
+| Livro                                                                       |
 |-----------------------------------------------------------------------------|
 | -nome: String                     |
 | +setNome(nome: String) <br/>+getNome(): String |
 
-Conta Corrente:
 | ContaCorrente                                                               |
 |-----------------------------------------------------------------------------|
 | -saldo: double                     |
 | +sacar(valor: double): double <br/>+depositar(double valor) <br/>-recalcularSaldo() |
 
-Par:
 | Par                                                               |
 |-----------------------------------------------------------------------------|
 | +chave: string <br/>+valor: string                     |
-|  |
+| <br/> |
 
-Impressora:
 | Impressora                                                               |
 |-----------------------------------------------------------------------------|
-|  |
+| <br/> |
 | +imprimir(Documento documento) |
 
